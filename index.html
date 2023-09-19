@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <p>Completa todos los campos requeridos</p>
+    <form method="post" action="">
+        <table>
+            <label for="nombre">Nombre
+                <input id="nombre" name="nombre" type="text" required>
+            </label>
+            <label for="apellido">Apellido
+                <input id="apellido" name="apellido" type="text" required>
+            </label>
+            <label for="edad">Edad
+                <input id="edad" type="number" name="edad" min="13" max="120" required>
+            </label>
+            <label for="nacimiento">Lugar de Nacimiento
+                <select id="nacimiento" name="nacimiento">
+                  <option value="">Lugar de Nacimeinto</option>
+                  <option value="1">Huancayo</option>
+                  <option value="2">Chupaca</option>
+                  <option value="3">Huancavelica</option>
+                  <option value="4">Jauja</option>
+                </select>
+            <label for="email">Email
+                <input id="email" name="email" type="email" required>
+            </label>
+            <label for="password">Contraseña
+                <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required>
+            </label>
+        </table>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
